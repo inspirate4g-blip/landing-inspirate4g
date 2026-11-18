@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no, date=no, email=no, address=no">
+<meta name="description" content="#Inspirate4G — Bundle 40+ AI Tools siap rebranding + video tutorial + template landing page HTML + bonus Custom GPT. Tinggal klaim, ganti nama, langsung jual. Checkout via WhatsApp.">
+<title>#Inspirate4G — 40+ AI Tools Siap Jual · Tinggal Rebranding, Langsung Cuan</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+/* ===================== TOKEN & RESET ===================== */
+:root{
+  --bg:#020617; --bg-2:#0b1220; --bg-3:#0f172a;
+  --card:rgba(15,23,42,.62); --card-solid:#0f1a2e;
+  --border:rgba(51,65,85,.55); --border-soft:rgba(51,65,85,.35);
+  --cyan:#20d6ff; --blue:#0877f9; --blue-2:#0ea5e9;
+  --emerald:#34d399; --amber:#fbbf24; --purple:#a78bfa; --red:#f87171;
+  --text:#e2e8f0; --muted:#94a3b8; --muted-2:#64748b; --white:#fff;
+  --grad:linear-gradient(135deg,#0877f9 0%,#20d6ff 100%);
+  --grad-soft:linear-gradient(135deg,rgba(8,119,249,.16),rgba(32,214,255,.10));
+  --shadow:0 24px 60px -20px rgba(8,119,249,.35);
+  --radius:18px; --radius-lg:26px;
+  --maxw:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  background:var(--bg); color:var(--text); line-height:1.6;
+  overflow-x:hidden; -webkit-font-smoothing:antialiased;
+  font-size:16px;
+}
+h1,h2,h3,h4,.display{font-family:'Plus Jakarta Sans','Inter',sans-serif;line-height:1.18;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;height:auto;display:block}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+section{position:relative}
+
+/* ===================== SCROLLBAR ===================== */
+::-webkit-scrollbar{width:8px;height:8px}
+::-webkit-scrollbar-track{background:#020617}
+::-webkit-scrollbar-thumb{background:#1e293b;border-radius:99px}
+::-webkit-scrollbar-thumb:hover{background:#334155}
+
+/* ===================== UTILITIES ===================== */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px;width:100%}
+.grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.glass{background:var(--card);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--border)}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:7px 14px;border-radius:99px;font-size:11px;font-weight:800;
+  letter-spacing:.14em;text-transform:uppercase;
+  background:rgba(32,214,255,.10);border:1px solid rgba(32,214,255,.28);
+  color:var(--cyan);
+}
+.eyebrow svg{width:14px;height:14px}
+.section-pad{padding:72px 0}
+@media(min-width:768px){.section-pad{padding:96px 0}}
+.sec-head{text-align:center;max-width:760px;margin:0 auto 48px}
+.sec-head h2{font-size:clamp(1.7rem,5vw,2.6rem);font-weight:800;color:var(--white);margin-bottom:14px}
+.sec-head p{color:var(--muted);font-size:1.02rem}
+.divider{height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent);margin:0}
+
+/* ===================== BUTTONS ===================== */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  font-weight:800;font-size:.95rem;border-radius:14px;
+  padding:15px 26px;transition:.25s cubic-bezier(.16,1,.3,1);
+  white-space:nowrap;text-align:center;line-height:1;
+  max-width:100%;overflow-wrap:break-word;
+}
+.btn svg{width:18px;height:18px;flex-shrink:0}
+/* Mobile: CTA panjang jadi full-width & teks boleh wrap supaya tidak overflow */
+@media(max-width:560px){
+  .btn{padding:13px 20px;font-size:.92rem}
+  .btn-lg{padding:15px 22px;font-size:1rem;width:100%;white-space:normal;line-height:1.3}
+  .hero-cta .btn{min-width:0}
+  .hero-cta{flex-direction:column}
+  .hero-cta .btn{width:100%}
+}
+.btn-primary{
+  background:var(--grad);color:#02131f;
+  box-shadow:0 14px 34px -10px rgba(32,214,255,.55),inset 0 1px 0 rgba(255,255,255,.25);
+}
+.btn-primary:hover{filter:brightness(1.08);transform:translateY(-2px);box-shadow:0 18px 40px -10px rgba(32,214,255,.7)}
+.btn-primary:active{transform:translateY(0)}
+.btn-lg{padding:18px 34px;font-size:1.05rem;border-radius:16px}
+.btn-ghost{background:rgba(15,23,42,.6);color:var(--white);border:1px solid var(--border)}
+.btn-ghost:hover{border-color:var(--cyan);background:rgba(32,214,255,.08);transform:translateY(-2px)}
+.btn-wa{background:#25D366;color:#062b12;box-shadow:0 14px 34px -10px rgba(37,211,102,.5)}
+.btn-wa:hover{filter:brightness(1.07);transform:translateY(-2px)}
+
+/* ===================== AMBIENT BG ===================== */
+.ambient{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.blob{position:absolute;border-radius:50%;filter:blur(110px);opacity:.55}
+.grid-dots{position:absolute;inset:0;opacity:.05;background-image:radial-gradient(#20d6ff 1px,transparent 1px);background-size:26px 26px}
+
+/* ===================== NAVBAR ===================== */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:60;
+  transition:.3s;background:rgba(2,6,23,.55);backdrop-filter:blur(14px);
+  border-bottom:1px solid transparent;
+}
+.nav.scrolled{background:rgba(2,6,23,.82);border-bottom:1px solid rgba(30,41,59,.6)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;font-family:'Plus Jakarta Sans';font-weight:900;font-size:1.15rem;color:#fff;letter-spacing:-.02em}
+.brand .logo{
+  width:38px;height:38px;border-radius:11px;background:var(--grad);
+  display:flex;align-items:center;justify-content:center;color:#02131f;
+  box-shadow:0 8px 22px -6px rgba(32,214,255,.5);
+}
+.brand .logo svg{width:21px;height:21px}
+.brand .hash{color:var(--cyan)}
+.nav-cta{display:flex;align-items:center;gap:10px}
+.nav .btn{padding:11px 18px;font-size:.85rem}
+.nav-links{display:none;gap:6px;align-items:center}
+@media(min-width:880px){.nav-links{display:flex}}
+.nav-links a{padding:9px 13px;border-radius:9px;color:var(--muted);font-size:.9rem;font-weight:600;transition:.2s}
+.nav-links a:hover{color:#fff;background:rgba(148,163,184,.08)}
+
+/* ===================== HERO ===================== */
+.hero{position:relative;padding:104px 0 60px;overflow:hidden}
+.hero .blob.b1{width:520px;height:520px;background:rgba(8,119,249,.35);top:-160px;right:-120px}
+.hero .blob.b2{width:420px;height:420px;background:rgba(32,214,255,.22);bottom:-180px;left:-120px}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:38px;position:relative;z-index:2}
+@media(min-width:960px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}}
+.hero-badge{margin-bottom:20px}
+.hero h1{
+  font-size:clamp(2.1rem,7vw,3.7rem);font-weight:900;color:#fff;
+  margin-bottom:18px;
+}
+.hero h1 .line{display:block}
+.hero-sub{font-size:clamp(1rem,2.4vw,1.18rem);color:var(--muted);max-width:560px;margin-bottom:28px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px}
+.hero-cta .btn{flex:1 1 auto;min-width:200px}
+.hero-trust{display:flex;flex-wrap:wrap;gap:14px 22px;align-items:center;color:var(--muted);font-size:.85rem}
+.hero-trust .item{display:flex;align-items:center;gap:7px}
+.hero-trust svg{width:15px;height:15px;color:var(--emerald);flex-shrink:0}
+
+/* Hero Visual Card */
+.hero-card{position:relative}
+.hero-mock{
+  border-radius:var(--radius-lg);padding:24px;
+  background:linear-gradient(160deg,rgba(15,23,42,.95),rgba(2,6,23,.9));
+  border:1px solid var(--border);box-shadow:var(--shadow);
+}
+.hero-mock .top{display:flex;align-items:center;gap:8px;margin-bottom:18px}
+.hero-mock .dot{width:11px;height:11px;border-radius:50%;background:#475569}
+.hero-mock .dot.r{background:#ef4444}.hero-mock .dot.y{background:#f59e0b}.hero-mock .dot.g{background:#22c55e}
+.hero-mock .url{margin-left:auto;font-size:.7rem;color:var(--muted);background:rgba(2,6,23,.6);padding:5px 11px;border-radius:99px;border:1px solid var(--border-soft)}
+.mock-title{font-family:'Plus Jakarta Sans';font-weight:800;color:#fff;font-size:1.15rem;margin-bottom:4px}
+.mock-sub{font-size:.78rem;color:var(--muted);margin-bottom:16px}
+.mock-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
+.mock-stat{background:rgba(2,6,23,.55);border:1px solid var(--border-soft);border-radius:12px;padding:11px 12px}
+.mock-stat .n{font-family:'Plus Jakarta Sans';font-weight:900;color:#fff;font-size:1.25rem}
+.mock-stat .l{font-size:.66rem;color:var(--muted);margin-top:2px;letter-spacing:.04em}
+.mock-list{display:flex;flex-direction:column;gap:8px}
+.mock-row{display:flex;align-items:center;gap:10px;padding:9px 11px;background:rgba(2,6,23,.4);border:1px solid var(--border-soft);border-radius:11px}
+.mock-row .ic{width:30px;height:30px;border-radius:8px;background:var(--grad-soft);display:flex;align-items:center;justify-content:center;color:var(--cyan);font-weight:800;font-size:.72rem;flex-shrink:0}
+.mock-row .nm{font-size:.82rem;color:#e2e8f0;font-weight:600;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mock-row .ct{font-size:.66rem;color:var(--muted-2);background:rgba(148,163,184,.08);padding:3px 8px;border-radius:99px;flex-shrink:0}
+.mock-float{
+  position:absolute;border-radius:14px;padding:12px 14px;
+  background:linear-gradient(135deg,#0f1a2e,#0b1220);
+  border:1px solid var(--border);box-shadow:0 18px 40px -14px rgba(8,119,249,.45);
+  display:flex;align-items:center;gap:10px;font-size:.78rem;font-weight:700;color:#fff;
+}
+.mock-float .pi{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#02131f;flex-shrink:0}
+.mock-float .pi svg{width:16px;height:16px}
+.mf-1{top:-18px;left:-14px;animation:floaty 5s ease-in-out infinite}
+.mf-2{bottom:-18px;right:-14px;animation:floaty 5s ease-in-out infinite .8s}
+.mf-1 .pi{background:var(--emerald)}
+.mf-2 .pi{background:var(--amber)}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@media(max-width:520px){.mf-1{left:0}.mf-2{right:0}}
+
+/* ===================== TRUST BAR ===================== */
+.trust{border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft);background:rgba(2,6,23,.4)}
+.trust-inner{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;padding:18px 0}
+.trust-item{display:flex;align-items:center;gap:8px;font-size:.82rem;color:var(--muted);font-weight:600}
+.trust-item svg{width:16px;height:16px;color:var(--cyan);flex-shrink:0}
+.trust-item b{color:#fff;font-weight:800}
+
+/* ===================== PROBLEM ===================== */
+.problem-grid{display:grid;grid-template-columns:1fr;gap:18px}
+@media(min-width:640px){.problem-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:960px){.problem-grid{grid-template-columns:repeat(3,1fr)}}
+.prob-card{
+  padding:24px;border-radius:var(--radius);background:rgba(15,23,42,.5);
+  border:1px solid var(--border-soft);transition:.25s;
+}
+.prob-card:hover{border-color:rgba(248,113,113,.35);transform:translateY(-3px)}
+.prob-card .ic{width:42px;height:42px;border-radius:11px;background:rgba(248,113,113,.12);color:var(--red);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.prob-card .ic svg{width:22px;height:22px}
+.prob-card h3{color:#fff;font-size:1.05rem;margin-bottom:8px}
+.prob-card p{color:var(--muted);font-size:.9rem}
+
+/* ===================== PILLARS / FEATURES ===================== */
+.pillars{display:grid;grid-template-columns:1fr;gap:18px}
+@media(min-width:640px){.pillars{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.pillars{grid-template-columns:repeat(4,1fr)}}
+.pillar{
+  position:relative;padding:26px 22px;border-radius:var(--radius-lg);
+  background:linear-gradient(160deg,rgba(15,23,42,.7),rgba(2,6,23,.5));
+  border:1px solid var(--border);overflow:hidden;transition:.3s;
+}
+.pillar::before{content:"";position:absolute;inset:0;background:radial-gradient(220px circle at 50% 0,rgba(32,214,255,.10),transparent 60%);opacity:0;transition:.3s}
+.pillar:hover{transform:translateY(-6px);border-color:rgba(32,214,255,.4)}
+.pillar:hover::before{opacity:1}
+.pillar .ic{width:50px;height:50px;border-radius:13px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;position:relative;z-index:1}
+.pillar .ic svg{width:26px;height:26px}
+.pillar h3{color:#fff;font-size:1.15rem;margin-bottom:10px;position:relative;z-index:1}
+.pillar p{color:var(--muted);font-size:.9rem;position:relative;z-index:1}
+.pillar .tag{display:inline-block;margin-top:14px;font-size:.72rem;font-weight:800;color:var(--cyan);letter-spacing:.06em;text-transform:uppercase;position:relative;z-index:1}
+.pi-cyan{background:rgba(32,214,255,.12);color:var(--cyan)}
+.pi-emerald{background:rgba(52,211,153,.12);color:var(--emerald)}
+.pi-amber{background:rgba(251,191,36,.12);color:var(--amber)}
+.pi-purple{background:rgba(167,139,250,.12);color:var(--purple)}
+
+/* ===================== TOOLS SHOWCASE ===================== */
+.tool-tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:14px;margin-bottom:26px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tool-tabs::-webkit-scrollbar{display:none}
+.tab{
+  flex-shrink:0;padding:9px 16px;border-radius:99px;font-size:.82rem;font-weight:700;
+  background:rgba(15,23,42,.7);border:1px solid var(--border-soft);color:var(--muted);transition:.2s;
+}
+.tab:hover{color:#fff;border-color:var(--border)}
+.tab.active{background:var(--grad);color:#02131f;border-color:transparent}
+.tools-grid{display:grid;grid-template-columns:1fr;gap:10px}
+@media(min-width:560px){.tools-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:880px){.tools-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1120px){.tools-grid{grid-template-columns:repeat(4,1fr)}}
+.tool{
+  display:flex;align-items:center;gap:11px;padding:13px;
+  background:rgba(15,23,42,.65);border:1px solid var(--border-soft);
+  border-radius:14px;transition:.22s;
+}
+.tool:hover{border-color:rgba(32,214,255,.4);background:rgba(15,23,42,.85);transform:translateY(-2px)}
+.tool .num{width:38px;height:38px;border-radius:10px;background:rgba(2,6,23,.6);color:var(--cyan);display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans';font-weight:800;font-size:.8rem;flex-shrink:0}
+.tool:hover .num{background:var(--cyan);color:#02131f}
+.tool .info{min-width:0;flex:1}
+.tool .nm{font-size:.86rem;font-weight:700;color:#e2e8f0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tool .ct{font-size:.68rem;color:var(--muted-2);margin-top:1px}
+.tools-foot{text-align:center;margin-top:30px}
+.tools-count{display:inline-flex;align-items:center;gap:8px;background:rgba(32,214,255,.08);border:1px solid rgba(32,214,255,.22);color:var(--cyan);padding:8px 16px;border-radius:99px;font-size:.82rem;font-weight:700}
+
+/* ===================== ROADMAP ===================== */
+.steps{display:grid;grid-template-columns:1fr;gap:14px;counter-reset:step}
+@media(min-width:720px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1080px){.steps{grid-template-columns:repeat(5,1fr)}}
+.step{
+  position:relative;padding:24px 20px;border-radius:var(--radius);
+  background:rgba(15,23,42,.55);border:1px solid var(--border-soft);transition:.25s;
+}
+.step:hover{border-color:rgba(32,214,255,.4);transform:translateY(-4px)}
+.step .num{
+  width:42px;height:42px;border-radius:11px;background:var(--grad);color:#02131f;
+  display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans';font-weight:900;font-size:1.15rem;margin-bottom:14px;
+}
+.step h4{color:#fff;font-size:1rem;margin-bottom:7px}
+.step p{color:var(--muted);font-size:.83rem;line-height:1.55}
+
+/* ===================== BONUS ===================== */
+.bonus-grid{display:grid;grid-template-columns:1fr;gap:18px}
+@media(min-width:760px){.bonus-grid{grid-template-columns:repeat(3,1fr)}}
+.bonus-card{
+  position:relative;padding:28px;border-radius:var(--radius-lg);
+  background:linear-gradient(160deg,rgba(251,191,36,.08),rgba(15,23,42,.6));
+  border:1px solid rgba(251,191,36,.25);overflow:hidden;transition:.3s;
+}
+.bonus-card:hover{transform:translateY(-6px);border-color:rgba(251,191,36,.5)}
+.bonus-card .ribbon{position:absolute;top:14px;right:14px;font-size:.66rem;font-weight:800;letter-spacing:.1em;color:#02131f;background:var(--amber);padding:4px 9px;border-radius:6px;text-transform:uppercase}
+.bonus-card .ic{width:54px;height:54px;border-radius:14px;background:rgba(251,191,36,.14);color:var(--amber);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.bonus-card .ic svg{width:28px;height:28px}
+.bonus-card h3{color:#fff;font-size:1.2rem;margin-bottom:10px}
+.bonus-card p{color:var(--muted);font-size:.9rem;margin-bottom:16px}
+.bonus-card .val{font-size:.8rem;color:var(--amber);font-weight:800}
+.bonus-card .val s{color:var(--muted-2);font-weight:500;margin-left:6px}
+
+/* ===================== PRICING ===================== */
+.pricing-wrap{display:flex;justify-content:center}
+.price-card{
+  position:relative;max-width:560px;width:100%;
+  border-radius:var(--radius-lg);overflow:hidden;
+  background:linear-gradient(165deg,rgba(15,23,42,.95),rgba(2,6,23,.92));
+  border:1px solid rgba(32,214,255,.35);box-shadow:0 30px 80px -24px rgba(8,119,249,.55);
+}
+.price-card::before{content:"";position:absolute;inset:0;background:radial-gradient(360px circle at 50% -10%,rgba(32,214,255,.18),transparent 60%);pointer-events:none}
+.price-ribbon{background:var(--grad);color:#02131f;text-align:center;padding:9px 16px;font-size:.76rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+.price-body{padding:34px 28px;position:relative;z-index:1}
+.price-body h3{font-size:1.5rem;color:#fff;text-align:center;margin-bottom:6px}
+.price-body .sub{color:var(--muted);text-align:center;font-size:.9rem;margin-bottom:22px}
+.price-amount{display:flex;align-items:baseline;justify-content:center;gap:10px;margin-bottom:8px}
+.price-amount .cur{font-size:1.1rem;color:var(--muted);font-weight:700}
+.price-amount .num{font-family:'Plus Jakarta Sans';font-weight:900;font-size:clamp(2.6rem,9vw,3.4rem);color:#fff;line-height:1}
+.price-amount .old{font-size:1rem;color:var(--muted-2);text-decoration:line-through}
+.price-save{text-align:center;margin-bottom:26px}
+.price-save span{display:inline-block;background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.3);color:var(--emerald);font-weight:800;font-size:.78rem;padding:5px 13px;border-radius:99px}
+.price-feats{display:flex;flex-direction:column;gap:11px;margin-bottom:28px;padding:22px;background:rgba(2,6,23,.5);border:1px solid var(--border-soft);border-radius:14px}
+.price-feats li{display:flex;align-items:flex-start;gap:11px;font-size:.92rem;color:#e2e8f0}
+.price-feats svg{width:18px;height:18px;color:var(--emerald);flex-shrink:0;margin-top:2px}
+.price-feats li b{color:#fff}
+.price-feats li .muted{color:var(--muted);font-size:.82rem;display:block;margin-top:2px}
+.price-cta{display:flex;flex-direction:column;gap:10px}
+.price-cta .btn{width:100%}
+.price-note{text-align:center;margin-top:14px;font-size:.78rem;color:var(--muted)}
+.price-note svg{width:14px;height:14px;color:var(--cyan);vertical-align:-2px}
+
+/* ===================== CHECKOUT FLOW ===================== */
+.flow{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:760px){.flow{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1080px){.flow{grid-template-columns:repeat(4,1fr)}}
+.flow-card{position:relative;padding:24px;border-radius:var(--radius);background:rgba(15,23,42,.55);border:1px solid var(--border-soft);transition:.25s}
+.flow-card:hover{border-color:rgba(32,214,255,.35);transform:translateY(-3px)}
+.flow-card .step-n{font-family:'Plus Jakarta Sans';font-weight:900;font-size:2.4rem;line-height:1;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:12px}
+.flow-card .ic{width:40px;height:40px;border-radius:11px;background:var(--grad-soft);color:var(--cyan);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.flow-card .ic svg{width:22px;height:22px}
+.flow-card h4{color:#fff;font-size:1.05rem;margin-bottom:7px}
+.flow-card p{color:var(--muted);font-size:.85rem;line-height:1.55}
+.flow-card .arrow{position:absolute;top:50%;right:-14px;transform:translateY(-50%);color:var(--border);font-size:1.6rem;z-index:2}
+@media(max-width:1079px){.flow-card .arrow{display:none}}
+.checkout-banner{
+  margin-top:36px;display:flex;flex-direction:column;gap:18px;align-items:center;text-align:center;
+  padding:28px;border-radius:var(--radius-lg);
+  background:linear-gradient(135deg,rgba(37,211,102,.10),rgba(15,23,42,.6));
+  border:1px solid rgba(37,211,102,.28);
+}
+.checkout-banner .ic{width:54px;height:54px;border-radius:14px;background:#25D366;color:#062b12;display:flex;align-items:center;justify-content:center}
+.checkout-banner .ic svg{width:30px;height:30px}
+.checkout-banner h3{color:#fff;font-size:1.25rem}
+.checkout-banner p{color:var(--muted);font-size:.9rem;max-width:520px}
+.checkout-banner .btn{margin-top:4px}
+
+/* ===================== FAQ ===================== */
+.faq-list{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.faq{border:1px solid var(--border-soft);border-radius:14px;background:rgba(15,23,42,.5);overflow:hidden;transition:.25s}
+.faq.open{border-color:rgba(32,214,255,.35);background:rgba(15,23,42,.7)}
+.faq-q{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 20px;width:100%;text-align:left;font-weight:700;color:#fff;font-size:.97rem}
+.faq-q .ico{width:24px;height:24px;flex-shrink:0;color:var(--cyan);transition:.3s}
+.faq.open .faq-q .ico{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;color:var(--muted);font-size:.9rem}
+.faq-a-inner{padding:0 20px 18px;line-height:1.6}
+.faq.open .faq-a{max-height:300px}
+
+/* ===================== FINAL CTA ===================== */
+.final{position:relative;overflow:hidden}
+.final .blob.b1{width:480px;height:480px;background:rgba(8,119,249,.3);top:-160px;left:50%;transform:translateX(-50%)}
+.final-card{
+  position:relative;z-index:2;text-align:center;padding:48px 28px;border-radius:var(--radius-lg);
+  background:linear-gradient(160deg,rgba(15,23,42,.9),rgba(2,6,23,.85));
+  border:1px solid var(--border);box-shadow:var(--shadow);
+}
+.final-card h2{font-size:clamp(1.8rem,5.5vw,2.8rem);color:#fff;margin-bottom:16px}
+.final-card p{color:var(--muted);max-width:560px;margin:0 auto 28px;font-size:1.02rem}
+.final-card .btn{margin:0 auto}
+.final-card .meta{margin-top:20px;color:var(--muted);font-size:.82rem}
+
+/* ===================== FOOTER ===================== */
+.footer{border-top:1px solid var(--border-soft);background:rgba(2,6,23,.6);padding:40px 0 30px}
+.footer-inner{display:flex;flex-direction:column;gap:24px;align-items:center;text-align:center}
+.footer .brand{font-size:1.2rem}
+.footer p{color:var(--muted);font-size:.85rem;max-width:540px}
+.footer-bot{color:var(--muted-2);font-size:.78rem;border-top:1px solid var(--border-soft);padding-top:20px;text-align:center}
+
+/* ===================== FLOATING WA ===================== */
+.fab{position:fixed;bottom:18px;right:18px;z-index:70;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px -6px rgba(37,211,102,.6);transition:.25s}
+.fab:hover{transform:scale(1.08)}
+.fab svg{width:30px;height:30px;color:#062b12}
+.fab::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(37,211,102,.4);animation:pulse 2s ease-out infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.5);opacity:0}}
+@media(max-width:520px){.fab{width:52px;height:52px;bottom:14px;right:14px}.fab svg{width:26px;height:26px}}
+
+/* ===================== ANIMATIONS ===================== */
+.reveal{opacity:0;transform:translateY(24px);transition:.6s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}*{animation:none!important}}
+</style>
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand" aria-label="#Inspirate4G">
+      <span class="logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+      </span>
+      <span><span class="hash">#</span>Inspirate4G</span>
+    </a>
+    <div class="nav-links">
+      <a href="#masalah">Masalah</a>
+      <a href="#isi-paket">Isi Paket</a>
+      <a href="#tools">Tools</a>
+      <a href="#cara-kerja">Cara Kerja</a>
+      <a href="#bonus">Bonus</a>
+      <a href="#harga">Harga</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-primary" data-wa href="#harga">Klaim Sekarang</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero" id="top">
+  <div class="ambient">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="grid-dots"></div>
+  </div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-text reveal">
+        <span class="eyebrow hero-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+          Bundle 40+ AI Tools · Siap Jual Hari Ini
+        </span>
+        <h1>
+          <span class="line">Jual Produk Digital</span>
+          <span class="line">Tanpa Bikin Apa-apa.</span>
+          <span class="line grad-text">Tinggal Rebranding, Langsung Cuan!</span>
+        </h1>
+        <p class="hero-sub">
+          <b style="color:#fff">#Inspirate4G</b> adalah paket lengkap <b style="color:#fff">40+ AI tools</b> siap pakai, video tutorial langkah demi langkah, template landing page HTML responsif, dan bonus Custom GPT untuk ide konten &amp; ad creative. Ambil, ganti nama, jual. Itu saja.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" data-wa href="#harga">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20z"/></svg>
+            Klaim Paket via WhatsApp
+          </a>
+        </div>
+        <div class="hero-trust">
+          <span class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 1 Kali Bayar · Akses Selamanya</span>
+          <span class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Bisa Rebranding &amp; diJual Ulang</span>
+          <span class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Pembayaran Transfer Bank</span>
+        </div>
+      </div>
+
+      <!-- Hero Visual -->
+      <div class="hero-card reveal">
+        <div class="hero-mock">
+          <div class="top">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="url">#Inspirate4G Member Area</span>
+          </div>
+          <div class="mock-title">Dashboard Member</div>
+          <div class="mock-sub">Akses penuh setelah checkout via WhatsApp</div>
+          <div class="mock-stats">
+            <div class="mock-stat"><div class="n">40+</div><div class="l">AI TOOLS</div></div>
+            <div class="mock-stat"><div class="n">5</div><div class="l">VIDEO</div></div>
+            <div class="mock-stat"><div class="n">3</div><div class="l">BONUS</div></div>
+          </div>
+          <div class="mock-list">
+            <div class="mock-row"><div class="ic">01</div><div class="nm">ProProduct Studio</div><div class="ct">Bisnis</div></div>
+            <div class="mock-row"><div class="ic">02</div><div class="nm">AI Carousel Conceptor</div><div class="ct">Konten</div></div>
+            <div class="mock-row"><div class="ic">03</div><div class="nm">Poster Kajian</div><div class="ct">Islami</div></div>
+            <div class="mock-row"><div class="ic">04</div><div class="nm">Quiz Maker Edukasi</div><div class="ct">Anak</div></div>
+          </div>
+        </div>
+        <div class="mock-float mf-1">
+          <span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          Rebranding Siap
+        </div>
+        <div class="mock-float mf-2">
+          <span class="pi"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg></span>
+          Bonus Custom GPT
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== TRUST BAR ===================== -->
+<section class="trust">
+  <div class="wrap trust-inner">
+    <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> <b>40+</b> AI Tools</span>
+    <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg> <b>5</b> Video Tutorial</span>
+    <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/></svg> <b>3</b> Bonus Premium</span>
+    <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Template <b>Landing Page HTML</b></span>
+    <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Garansi <b>Akses Selamanya</b></span>
+  </div>
+</section>
+
+<!-- ===================== PROBLEM ===================== -->
+<section class="section-pad" id="masalah">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> Kenapa Susah Banget?</span>
+      <h2>Capek Bikin Produk Digital Sendiri? Kamu <span class="grad-text">Nggak Sendirian.</span></h2>
+      <p>Mayoritas orang gagal jualan produk digital bukan karena tidak mau usaha, tapi karena terjebak di tahap paling melelahkan: bikin produknya. Ini deretan masalah yang bikin cuan selalu tertunda.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="prob-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3>Lama Bikin dari Nol</h3>
+        <p>Membangun 1 AI tool saja bisa makan berhari-hari. Belum lagi kalau kamu harus bikin 10, 20, atau 40 tools sekaligus untuk punya katalog produk yang lengkap.</p>
+      </div>
+      <div class="prob-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>Modal Besar, Skill Terbatas</h3>
+        <p>Develop tools AI butuh developer, server, API berbayar, dan budget iklan. Modal jutaan belum tentu balik modal kalau eksekusinya tidak tepat.</p>
+      </div>
+      <div class="prob-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
+        <h3>Tidak Punya Etalase</h3>
+        <p>Produk sudah ada, tapi landing page belum ada. Tanpa halaman jualan yang meyakinkan, calon pembeli bingung dan akhirnya tidak jadi checkout.</p>
+      </div>
+      <div class="prob-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>Kering Ide Konten</h3>
+        <p>Produk sudah jadi, etalase sudah ada, tapi postingan sosmed mentok di 3 ide. Tanpa konten yang konsisten, produk tidak pernah dilihat orang.</p>
+      </div>
+      <div class="prob-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg></div>
+        <h3>Saingan Sudah Duluan</h3>
+        <p>Seller lain sudah jualan tools serupa sambil kamu masih coding. Kalau selalu kejar dari belakang, pangsa pasar selalu yang cepat menang.</p>
+      </div>
+      <div class="prob-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+        <h3>Takut Salah Tech</h3>
+        <p>Belum paham Gemini Canvas atau AI generator? Akhirnya menunda terus karena takut tools-nya tidak jalan saat dijual ke pembeli.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<!-- ===================== ISI PAKET / PILLARS ===================== -->
+<section class="section-pad" id="isi-paket">
+  <div class="ambient"><div class="blob b1" style="width:380px;height:380px;background:rgba(32,214,255,.16);top:10%;left:-120px"></div></div>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> Apa yang Kamu Dapatkan</span>
+      <h2>Satu Paket, <span class="grad-text">Empat Pilar Cuan.</span></h2>
+      <p>Bukan sekadar tools, tapi sistem lengkap dari produk, tutorial, etalase, sampai generator konten iklan. Semua siap pakai untuk pemula maupun seller berpengalaman.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar reveal">
+        <div class="ic pi-cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3>40+ AI Tools Siap Rebranding</h3>
+        <p>Katalog AI tools berbasis Gemini Canvas yang sudah jadi dan teruji. Tinggal duplikasi ke akunmu sendiri, ganti nama, jadikan produk branded-mu.</p>
+        <span class="tag">Bisnis · Konten · Islami · Anak · Lifestyle</span>
+      </div>
+      <div class="pillar reveal">
+        <div class="ic pi-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div>
+        <h3>5 Video Tutorial Praktis</h3>
+        <p>Panduan step-by-step mulai dari cara rebranding, bikin landing page, sampai penggunaan Custom GPT untuk ide konten dan ad creative. Ikuti, praktekkan, selesai.</p>
+        <span class="tag">Rebranding · Landing Page · Ads</span>
+      </div>
+      <div class="pillar reveal">
+        <div class="ic pi-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <h3>Template Landing Page HTML</h3>
+        <p>Source code HTML responsif siap upload. Tinggal edit teks &amp; warna, langsung jadi etalase produkmu yang profesional. Tidak perlu coding dari nol.</p>
+        <span class="tag">Responsive · Siap Pakai · Mudah Edit</span>
+      </div>
+      <div class="pillar reveal">
+        <div class="ic pi-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg></div>
+        <h3>Bonus Custom GPT &amp; Ebook</h3>
+        <p>Akses CEP (generator ide konten), CEPI (pembuat ad image), dan Ebook Threads. Senjata tambahan untuk produksi konten organik maupun iklan berkualitas.</p>
+        <span class="tag">CEP · CEPI · Ebook Threads</span>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px" class="reveal">
+      <a class="btn btn-primary btn-lg" data-wa href="#harga">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><polyline points="12 5 19 12 12 19"/></svg>
+        Klaim Paket Lengkap via WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TOOLS SHOWCASE ===================== -->
+<section class="section-pad" id="tools" style="background:rgba(2,6,23,.4);border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg> 40+ AI Tools di Dalam Paket</span>
+      <h2>Lihat <span class="grad-text">Daftar Tools</span> Lengkap</h2>
+      <p>Filter berdasarkan kategori untuk melihat tools yang paling relevan dengan niche-mu. Semua ini sudah termasuk dalam satu paket, satu kali bayar.</p>
+    </div>
+    <div class="tool-tabs reveal" id="toolTabs">
+      <button class="tab active" data-cat="all">Semua (40)</button>
+      <button class="tab" data-cat="Konten & Sosmed">Konten &amp; Sosmed</button>
+      <button class="tab" data-cat="Bisnis & Desain">Bisnis &amp; Desain</button>
+      <button class="tab" data-cat="Edukasi & Anak">Edukasi &amp; Anak</button>
+      <button class="tab" data-cat="Islami">Islami</button>
+      <button class="tab" data-cat="Lifestyle & Produktivitas">Lifestyle &amp; Produktivitas</button>
+    </div>
+    <div class="tools-grid reveal" id="toolsGrid"></div>
+    <div class="tools-foot reveal">
+      <span class="tools-count"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> Menampilkan <b id="visibleCount" style="color:#fff">40</b> dari 40 tools</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CARA KERJA / ROADMAP ===================== -->
+<section class="section-pad" id="cara-kerja">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 12l3 3 4-4 5 5"/></svg> Peta Perjalanan 5 Langkah</span>
+      <h2>Dari Klaim Sampai <span class="grad-text">Cuan, Cuma 5 Langkah.</span></h2>
+      <p>Ikuti urutan ini dan kamu sudah punya produk branded, etalase profesional, dan materi iklan siap tayang. Tidak perlu tebak-tebakan.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="num">1</div>
+        <h4>Buka &amp; Coba Tools</h4>
+        <p>Uji coba sendiri tiap tools. Sebelum jual, kamu sudah tahu seluk-beluk produknya dengan detail dan yakin menjualnya.</p>
+      </div>
+      <div class="step reveal">
+        <div class="num">2</div>
+        <h4>Rebranding Nama</h4>
+        <p>Duplikasi tools ke akunmu sendiri di Gemini Canvas, lalu ganti nama &amp; brand sesuai identitas produkmu.</p>
+      </div>
+      <div class="step reveal">
+        <div class="num">3</div>
+        <h4>Bikin Landing Page</h4>
+        <p>Pakai template HTML responsif yang sudah disediakan. Edit teks &amp; warna, upload, jadi etalase jualanmu.</p>
+      </div>
+      <div class="step reveal">
+        <div class="num">4</div>
+        <h4>Rancang Ide Konten</h4>
+        <p>Gunakan Custom GPT CEP untuk membangkitkan ratusan ide konten organik untuk sosial mediamu.</p>
+      </div>
+      <div class="step reveal">
+        <div class="num">5</div>
+        <h4>Bikin Konten Iklan</h4>
+        <p>Pakai CEPI untuk generate konsep visual &amp; ad creative. Materi iklan siap tayang, produk siap di-promo.</p>
+      </div>
+    </div>
+    <div style="margin-top:30px;padding:18px 22px;border-radius:14px;border:1px solid rgba(251,191,36,.25);background:rgba(251,191,36,.05);display:flex;gap:12px;align-items:flex-start" class="reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:22px;height:22px;flex-shrink:0;margin-top:2px"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      <p style="font-size:.86rem;color:#e2e8f0"><b style="color:#fbbf24">Catatan penting:</b> Semua aplikasi dibuat menggunakan Gemini Canvas, jadi ketahanan aplikasi bergantung pada kebijakan Google. Segera duplikasi &amp; rebranding ke akunmu sendiri agar produk tetap aman dan milikmu sepenuhnya.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BONUS ===================== -->
+<section class="section-pad" id="bonus" style="background:rgba(2,6,23,.4);border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" style="background:rgba(251,191,36,.10);border-color:rgba(251,191,36,.28);color:#fbbf24"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg> Bonus Spesial PRO</span>
+      <h2>3 Bonus <span class="grad-text">Senjata Tambahan</span></h2>
+      <p>Selain 40+ tools, kamu dapat akses ke Custom GPT premium dan ebook untuk produksi konten &amp; iklan yang berkualitas tinggi.</p>
+    </div>
+    <div class="bonus-grid">
+      <div class="bonus-card reveal">
+        <span class="ribbon">Custom GPT</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/><line x1="12" y1="2" x2="12" y2="4"/></svg></div>
+        <h3>CEP — Ide Konten</h3>
+        <p>Custom GPT generator ide kampanye promosi &amp; hook konten otomatis berbasis AI. Hasilkan ratusan ide konten organik maupun materi iklan dalam hitungan menit.</p>
+        <div class="val">Bonus · <s>Nilai Rp 10.000</s></div>
+      </div>
+      <div class="bonus-card reveal">
+        <span class="ribbon">Custom GPT</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
+        <h3>CEPI — Ad Image</h3>
+        <p>Custom GPT pembuat konsep &amp; visual gambar iklan siap pakai untuk kebutuhan periklanan. Hasilkan materi Ad Creative berkualitas tinggi tanpa desainer.</p>
+        <div class="val">Bonus · <s>Nilai Rp 10.000</s></div>
+      </div>
+      <div class="bonus-card reveal">
+        <span class="ribbon">Ebook</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+        <h3>Ebook Threads</h3>
+        <p>Panduan lengkap membangun konten &amp; mendatangkan trafik organik di Threads. Strategi tumbuh secara organik tanpa biaya iklan.</p>
+        <div class="val">Bonus · <s>Nilai Rp 100.000</s></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HARGA / PRICING ===================== -->
+<section class="section-pad" id="harga">
+  <div class="ambient"><div class="blob b1" style="width:420px;height:420px;background:rgba(8,119,249,.22);top:0;left:50%;transform:translateX(-50%)"></div></div>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg> Penawaran Terbatas</span>
+      <h2>Satu Kali Bayar, <span class="grad-text">Akses Selamanya.</span></h2>
+      <p>Tidak ada langganan bulanan. Tidak ada biaya tersembunyi. Bayar sekali, semua milikmu untuk direbranding dan dijual ulang.</p>
+    </div>
+    <div class="pricing-wrap reveal">
+      <div class="price-card">
+        <div class="price-ribbon">🔥 Promo Launching — Promo Terbatas</div>
+        <div class="price-body">
+          <h3>Paket Lengkap #Inspirate4G</h3>
+          <p class="sub">40+ AI Tools · Tutorial · Template LP · Bonus Custom GPT</p>
+          <div class="price-amount">
+            <span class="cur">Rp</span>
+            <span class="num">50.000</span>
+            <span class="old">Rp 175.000</span>
+          </div>
+          <div class="price-save"><span>Hemat 71% · Harga naik tanpa pemberitahuan</span></div>
+          <ul class="price-feats">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b>40+ AI Tools siap rebranding</b><span class="muted">Bisnis, Konten, Islami, Anak, Lifestyle</span></div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b>5 Video tutorial praktis</b> <span style="color:var(--cyan);font-weight:800;font-size:.78rem">· nilai Rp 25.000</span><span class="muted">Rebranding, landing page, ad creative</span></div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b>Template Landing Page HTML</b><span class="muted">Responsif, siap edit &amp; upload</span></div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b>Bonus: CEP + CEPI + Ebook Threads</b><span class="muted">Custom GPT &amp; panduan organik</span></div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b>Hak rebranding &amp; jual ulang</b><span class="muted">Produk jadi milikmu sepenuhnya</span></div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><div><b>Akses selamanya + update</b><span class="muted">Tanpa biaya langganan</span></div></li>
+          </ul>
+          <div class="total-box" style="margin:.2rem 0 1.05rem;padding:.95rem 1.05rem;border:1px solid var(--border-soft);border-radius:14px;background:rgba(255,255,255,.03)">
+            <div class="muted" style="font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.5rem">Rincian Pembayaran</div>
+            <div style="display:flex;flex-direction:column;gap:.38rem;font-size:.92rem">
+              <div style="display:flex;justify-content:space-between;gap:1rem"><span>Paket #Inspirate4G</span><span>Rp 50.000</span></div>
+              <div style="display:flex;justify-content:space-between;gap:1rem"><span>5 Video tutorial</span><span>Rp 25.000</span></div>
+              <div style="display:flex;justify-content:space-between;gap:1rem;color:#34d399"><span>Diskon bonus</span><span>&minus;Rp 10.000</span></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-top:.65rem;padding-top:.6rem;border-top:1px dashed var(--border-soft)">
+              <span style="font-weight:800">Total Pembayaran</span>
+              <span style="font-size:1.5rem;font-weight:800;color:var(--cyan);white-space:nowrap">Rp 65.000</span>
+            </div>
+          </div>
+          <div class="price-cta">
+            <a class="btn btn-primary btn-lg" data-wa href="#checkout">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20z"/></svg>
+              Checkout Sekarang via WhatsApp
+            </a>
+          </div>
+          <p class="price-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg> Pembayaran via transfer bank — nomor rekening diberikan oleh admin setelah kamu chat WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CHECKOUT FLOW ===================== -->
+<section class="section-pad" id="checkout" style="background:rgba(2,6,23,.4);border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" style="background:rgba(37,211,102,.10);border-color:rgba(37,211,102,.28);color:#34d399"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Checkout Room</span>
+      <h2>Cara Klaim Akses <span class="grad-text">dalam 4 Langkah.</span></h2>
+      <p>Pembayaran dilakukan via transfer bank. Nomor rekening tidak dipublikasikan di halaman ini — diberikan langsung oleh admin lewat WhatsApp agar transaksimu aman dan terverifikasi.</p>
+    </div>
+    <div class="flow">
+      <div class="flow-card reveal">
+        <div class="step-n">01</div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg></div>
+        <h4>Klik Tombol WhatsApp</h4>
+        <p>Tekan tombol "Checkout via WhatsApp" di halaman ini. Kamu akan langsung terhubung ke admin #Inspirate4G tanpa perlu save nomor dulu.</p>
+        <span class="arrow">→</span>
+      </div>
+      <div class="flow-card reveal">
+        <div class="step-n">02</div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></div>
+        <h4>Minta Nomor Rekening</h4>
+        <p>Admin akan memberikan nomor rekening bank resmi untuk pembayaran. Sebutkan kalau kamu punya bank preferensi agar transfer lebih cepat.</p>
+        <span class="arrow">→</span>
+      </div>
+      <div class="flow-card reveal">
+        <div class="step-n">03</div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <h4>Transfer &amp; Konfirmasi</h4>
+        <p>Lakukan transfer sesuai nominal, lalu kirim bukti pembayaran ke admin via WhatsApp. Verifikasi biasanya selesai dalam beberapa menit.</p>
+        <span class="arrow">→</span>
+      </div>
+      <div class="flow-card reveal">
+        <div class="step-n">04</div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg></div>
+        <h4>Terima Akses Member</h4>
+        <p>Setelah terverifikasi, admin kirim link Member Area + email terverifikasi. Login pakai email itu, dan semua 40+ tools + bonus langsung bisa kamu akses selamanya.</p>
+      </div>
+    </div>
+    <div class="checkout-banner reveal">
+      <div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg></div>
+      <h3>Siap Klaim Paket #Inspirate4G?</h3>
+      <p>Chat admin sekarang untuk mendapatkan nomor rekening &amp; menyelesaikan pembayaran. Akses dibuka begitu bukti transfer terverifikasi.</p>
+      <a class="btn btn-wa btn-lg" data-wa href="#top">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
+        Chat Admin &amp; Minta Nomor Rekening
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="section-pad" id="faq">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Pertanyaan Umum</span>
+      <h2>Masih Ada <span class="grad-text">Pertanyaan?</span></h2>
+      <p>Jawaban di bawah ini menjawab hal yang paling sering ditanyakan calon pembeli sebelum checkout.</p>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq">
+        <button class="faq-q" type="button">Apa itu #Inspirate4G? <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="faq-a"><div class="faq-a-inner">#Inspirate4G adalah bundle produk digital berisi 40+ AI tools siap rebranding, 5 video tutorial, template landing page HTML, dan bonus Custom GPT (CEP, CEPI) + Ebook Threads. Semua dirancang agar kamu bisa langsung memiliki produk branded dan menjualnya kembali tanpa harus membuat dari nol.</div></div>
+      </div>
+      <div class="faq">
+        <button class="faq-q" type="button">Bagaimana cara membayar &amp; mendapatkan akses? <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="faq-a"><div class="faq-a-inner">Klik tombol WhatsApp di halaman ini, chat admin untuk minta nomor rekening, lalu lakukan transfer bank. Setelah bukti pembayaran kamu kirim &amp; diverifikasi admin, kamu akan menerima link Member Area beserta email terverifikasi untuk login. Proses umumnya selesai dalam hitungan menit.</div></div>
+      </div>
+      <div class="faq">
+        <button class="faq-q" type="button">Kenapa nomor rekening tidak ditampilkan langsung di halaman? <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="faq-a"><div class="faq-a-inner">Demi keamanan transaksi &amp; verifikasi pembeli, nomor rekening diberikan langsung oleh admin melalui WhatsApp. Cara ini memastikan setiap pembayaran tercatat, terverifikasi, dan kamu langsung dipandu sampai akses dibuka — tanpa risiko salah transfer ke rekening yang tidak sah.</div></div>
+      </div>
+      <div class="faq">
+        <button class="faq-q" type="button">Apakah tools-nya boleh direbranding &amp; dijual ulang? <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="faq-a"><div class="faq-a-inner">Boleh. Itu justru inti dari paket ini. Kamu bebas menduplikasi tools ke akun Gemini Canvas-mu sendiri, mengganti nama &amp; brand, lalu menjualnya sebagai produk milikmu. Tonton video tutorial rebranding yang sudah disediakan untuk panduan lengkapnya.</div></div>
+      </div>
+      <div class="faq">
+        <button class="faq-q" type="button">Apakah cocok untuk pemula yang belum paham AI? <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="faq-a"><div class="faq-a-inner">Sangat cocok. Semua tools sudah jadi — kamu tidak perlu coding atau setting AI dari nol. Tinggal duplikasi &amp; pakai. Ditambah video tutorial step-by-step untuk rebranding, bikin landing page, dan produksi konten, jadi pemula pun bisa langsung berjalan.</div></div>
+      </div>
+      <div class="faq">
+        <button class="faq-q" type="button">Berapa lama aksesnya berlaku? <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="faq-a"><div class="faq-a-inner">Akses berlaku selamanya. Tidak ada langganan bulanan atau biaya perpanjangan. Satu kali bayar, semua materi (tools, tutorial, template, bonus) langsung milikmu untuk dipakai kapan pun.</div></div>
+      </div>
+      <div class="faq">
+        <button class="faq-q" type="button">Kalau ada kendala login atau akses, ke mana saya menghubungi? <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="faq-a"><div class="faq-a-inner">Hubungi admin lewat WhatsApp yang sama dengan saat checkout. Sertakan email terverifikasi &amp; bukti pembayaranmu agar proses verifikasi cepat. Admin akan membantu sampai aksesmu kembali normal.</div></div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:34px" class="reveal">
+      <a class="btn btn-wa btn-lg" data-wa href="#top">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
+        Tanya Langsung ke Admin WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="section-pad final" id="cta-akhir">
+  <div class="ambient"><div class="blob b1"></div><div class="grid-dots"></div></div>
+  <div class="wrap">
+    <div class="final-card reveal">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg> Saatnya Jualan, Bukan Bikin</span>
+      <h2>Mulai Cuan Hari Ini dengan <span class="grad-text">#Inspirate4G</span></h2>
+      <p>40+ AI tools, tutorial, template landing page, dan bonus Custom GPT sudah menunggu. Tinggal klaim, rebranding, dan jual. Bayar sekali via transfer bank, akses selamanya.</p>
+      <a class="btn btn-primary btn-lg" data-wa href="#top">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2z"/></svg>
+        Klaim Paket Sekarang
+      </a>
+      <div class="meta">💡 Pembayaran via transfer bank · Nomor rekening dari admin WhatsApp · Akses selamanya</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== FLOATING WA ===================== -->
+<a class="fab" data-wa href="#harga" aria-label="Chat WhatsApp untuk klaim paket">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20z"/></svg>
+</a>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <a href="#top" class="brand">
+      <span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span>
+      <span><span class="hash">#</span>Inspirate4G</span>
+    </a>
+    <p>Tools · Ide · Konten · Cuan. Paket 40+ AI tools siap rebranding untuk mempercepat cuan produk digitalmu. Klaim akses melalui WhatsApp, pembayaran via transfer bank (nomor rekening diberikan oleh admin).</p>
+    <a class="btn btn-wa" data-wa href="#harga">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4 0 1.4 1 2.8 1.2 3 .1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.5-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.3-1.2l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20z"/></svg>
+      Chat Admin di WhatsApp
+    </a>
+    <div class="footer-bot">© 2026 #Inspirate4G · All rights reserved · Dibuat untuk para seller produk digital Indonesia.</div>
+  </div>
+</footer>
+
+<script>
+/* =========================================================
+  #Inspirate4G — Landing Page Script
+  - Semua tombol [data-wa] diarahkan ke WhatsApp admin
+  - Render 40 AI tools + filter kategori
+  - FAQ accordion, navbar scroll, reveal on scroll
+  ========================================================= */
+
+/* ----- 1. WHATSAPP CONFIG -----
+   Semua tombol dengan atribut [data-wa] akan otomatis diarahkan ke link ini.
+   Ganti WA_URL bila nomor admin berubah. */
+var WA_NUMBER = "6281280089872";
+var WA_TEXT   = "Halo admin #Inspirate4G, saya mau klaim bundle 40+ AI Tools (Tools · Tutorial · Template LP · Bonus). Mohon info nomor rekening untuk pembayaran. Terima kasih.";
+var WA_URL    = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(WA_TEXT);
+
+document.querySelectorAll("[data-wa]").forEach(function(el){
+  el.setAttribute("href", WA_URL);
+  el.setAttribute("target", "_blank");
+  el.setAttribute("rel", "noopener noreferrer");
+});
+
+/* ----- 2. DAFTAR 40 AI TOOLS (sesuai member area asli) ----- */
+var TOOLS = [
+  { name:"ProProduct Studio", cat:"Bisnis & Desain" },
+  { name:"Room Vibe", cat:"Bisnis & Desain" },
+  { name:"Poster Kajian", cat:"Islami" },
+  { name:"Muqatta", cat:"Islami" },
+  { name:"Pillow Talk Pasutri", cat:"Lifestyle & Produktivitas" },
+  { name:"Nano Niche", cat:"Bisnis & Desain" },
+  { name:"Dakwah Infografis", cat:"Islami" },
+  { name:"AI Carousel Conceptor", cat:"Konten & Sosmed" },
+  { name:"Auto-Follow-Up Message Builder", cat:"Bisnis & Desain" },
+  { name:"Generator Hook Video", cat:"Konten & Sosmed" },
+  { name:"Offline Date Idea Generator", cat:"Lifestyle & Produktivitas" },
+  { name:"Logo Concept Generator", cat:"Bisnis & Desain" },
+  { name:"Indonesian Diet Modifier", cat:"Lifestyle & Produktivitas" },
+  { name:"Meeting Minutes Summarizer", cat:"Lifestyle & Produktivitas" },
+  { name:"Chef AI Bahan Seadanya", cat:"Lifestyle & Produktivitas" },
+  { name:"Cerita Pengantar Tidur Anak", cat:"Edukasi & Anak" },
+  { name:"Quiz Maker Edukasi", cat:"Edukasi & Anak" },
+  { name:"Generator Ice-Breaking", cat:"Edukasi & Anak" },
+  { name:"TemuBarang", cat:"Lifestyle & Produktivitas" },
+  { name:"Pembuat Surat Lamaran Kerja", cat:"Lifestyle & Produktivitas" },
+  { name:"Skrip FYP", cat:"Konten & Sosmed" },
+  { name:"ProfileOptimizer", cat:"Konten & Sosmed" },
+  { name:"Series Concept Builder", cat:"Konten & Sosmed" },
+  { name:"Mock Up AI", cat:"Bisnis & Desain" },
+  { name:"Belajar Matematika untuk Anak SD", cat:"Edukasi & Anak" },
+  { name:"Threads X Maker Pro", cat:"Konten & Sosmed" },
+  { name:"CatatUang", cat:"Lifestyle & Produktivitas" },
+  { name:"Ayo Main", cat:"Edukasi & Anak" },
+  { name:"NutriAdapt AI", cat:"Lifestyle & Produktivitas" },
+  { name:"T-Voice", cat:"Konten & Sosmed" },
+  { name:"Tools SaCu Pro", cat:"Bisnis & Desain" },
+  { name:"NexSearch AI", cat:"Lifestyle & Produktivitas" },
+  { name:"MyTeman", cat:"Lifestyle & Produktivitas" },
+  { name:"Anatomiku", cat:"Edukasi & Anak" },
+  { name:"Anatonimal", cat:"Edukasi & Anak" },
+  { name:"Body Safety Kids", cat:"Edukasi & Anak" },
+  { name:"SirahApp", cat:"Islami" },
+  { name:"Cerita Rumahan", cat:"Edukasi & Anak" },
+  { name:"25 Nabi & Rasul", cat:"Islami" },
+  { name:"Ramadhan Activity", cat:"Islami" }
+];
+
+var CAT_SHORT = {
+  "Konten & Sosmed":"Konten",
+  "Bisnis & Desain":"Bisnis",
+  "Edukasi & Anak":"Anak",
+  "Islami":"Islami",
+  "Lifestyle & Produktivitas":"Lifestyle"
+};
+
+var activeCat = "all";
+var toolsGrid = document.getElementById("toolsGrid");
+var visibleCount = document.getElementById("visibleCount");
+
+function escapeHtml(s){
+  return s.replace(/[&<>"']/g, function(c){
+    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
+  });
+}
+
+function renderTools(){
+  var list = TOOLS.map(function(t,i){ return Object.assign({_i:i+1}, t); })
+    .filter(function(t){
+      return activeCat === "all" || t.cat === activeCat;
+    });
+  toolsGrid.innerHTML = list.map(function(t){
+    return '<div class="tool">'
+      + '<div class="num">' + String(t._i).padStart(2,"0") + '</div>'
+      + '<div class="info"><div class="nm">' + escapeHtml(t.name) + '</div>'
+      + '<div class="ct">' + escapeHtml(t.cat) + '</div></div>'
+      + '</div>';
+  }).join("");
+  if (visibleCount) visibleCount.textContent = list.length;
+}
+
+document.querySelectorAll("#toolTabs .tab").forEach(function(btn){
+  btn.addEventListener("click", function(){
+    activeCat = btn.getAttribute("data-cat");
+    document.querySelectorAll("#toolTabs .tab").forEach(function(b){
+      b.classList.toggle("active", b === btn);
+    });
+    renderTools();
+  });
+});
+renderTools();
+
+/* ----- 3. FAQ ACCORDION ----- */
+document.querySelectorAll(".faq-q").forEach(function(btn){
+  btn.addEventListener("click", function(){
+    var parent = btn.closest(".faq");
+    var isOpen = parent.classList.contains("open");
+    document.querySelectorAll(".faq").forEach(function(f){ f.classList.remove("open"); });
+    if (!isOpen) parent.classList.add("open");
+  });
+});
+
+/* ----- 4. NAVBAR SCROLL STATE ----- */
+var nav = document.getElementById("nav");
+function onScroll(){
+  if (window.scrollY > 20) nav.classList.add("scrolled");
+  else nav.classList.remove("scrolled");
+}
+window.addEventListener("scroll", onScroll, { passive:true });
+onScroll();
+
+/* ----- 5. REVEAL ON SCROLL ----- */
+var revealEls = document.querySelectorAll(".reveal");
+if ("IntersectionObserver" in window){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){
+        e.target.classList.add("in");
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold:0.12, rootMargin:"0px 0px -40px 0px" });
+  revealEls.forEach(function(el){ io.observe(el); });
+} else {
+  revealEls.forEach(function(el){ el.classList.add("in"); });
+}
+</script>
+
+
+</body>
+</html>
